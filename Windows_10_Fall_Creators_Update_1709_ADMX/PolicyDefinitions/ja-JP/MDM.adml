@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2016 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>表示名をここに入力する</displayName>
+  <description>説明をここに入力する</description>
+  <resources>
+    <stringTable>
+      <string id="MDM">MDM</string>
+      <string id="MDM_MDM_DisplayName">MDM の登録を無効にする</string>
+      <string id="MDM_MDM_Help">このポリシー設定では、モバイル デバイス管理 (MDM) の登録が許可されるかどうかを指定します。MDM を有効にすると、ユーザーのコンピューターを MDM サーバーによってリモートで管理できるようになります。
+
+このポリシー設定を構成しなかった場合、MDM の登録が有効になります。
+
+このポリシー設定を有効にすると、MDM の登録はすべてのユーザーに対して無効になります。既存の MDM 登録の登録を解除することはできません。
+
+このポリシー設定を無効にすると、すべてのユーザーに対して MDM の登録が有効になります。
+</string>
+        <string id="MDM_JoinMDM_DisplayName">AAD トークンによる自動 MDM 登録</string>
+        <string id="MDM_JoinMDM_Help">
+            このポリシー設定では、モバイル デバイス管理 (MDM) の登録を試みるかどうかを指定します。登録が成功すると、コンピューターは AAD に構成されている MDM サーバーによってリモートで管理されます。
+
+            このポリシー設定を構成しなかった場合、MDM は単独で使用されます
+
+            このポリシー設定を有効にした場合、MDM デバイスは AAD トークンの取得を試み、取得したトークンで AAD に構成されている URL を使用して登録します。
+
+            このポリシー設定を無効にした場合、MDM は登録解除されます
+        </string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

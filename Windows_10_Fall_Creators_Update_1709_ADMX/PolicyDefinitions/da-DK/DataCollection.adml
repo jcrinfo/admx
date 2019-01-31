@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2015 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>indtast det viste navn her</displayName>
+  <description>indtast beskrivelsen her</description>
+  <resources>
+    <stringTable>
+      <string id="AllowTelemetry">Tillad telemetri</string>
+      <string id="AllowTelemetry_0">0 - Sikkerhed [Kun Enterprise]</string>
+      <string id="AllowTelemetry_1">1 – Standard</string>
+      <string id="AllowTelemetry_2">2 - Forbedret</string>
+      <string id="AllowTelemetry_3">3 - Fuld</string>
+      <string id="AllowTelemetry_Explain">Denne politikindstilling bestemmer, hvor mange Windows-diagnosticeringsdata der sendes til Microsoft. Ved værdien 0 (Sikkerhed) sendes færrest mulige data til Microsoft for at beskytte Windows mest muligt. Windows-sikkerhedskomponenter som Værktøj til fjernelse af skadelig software (MSRT) og Windows Defender kan sende data til Microsoft på dette niveau, hvis de er aktiveret. Angivelsen af en værdi på 0 gælder kun for Enterprise-, EDU-, IoT- og Server-enheder. Hvis du angiver en værdi på 0 for andre enheder, svarer det til at angive en værdi på 1. 
+
+Ved værdien 1 (Grundlæggende) sendes de samme data som ved værdien 0 samt en meget begrænset mængde diagnosticeringsdata, f.eks. grundlæggende enhedsoplysninger, kvalitetsrelaterede data og oplysninger om appkompatibilitet. Bemærk, at hvis du angiver værdien 0 eller 1, vil det medføre, at visse oplevelser på enheden forringes.
+
+Ved værdien 2 (Udvidet) sendes de samme data som ved værdien 1 samt yderligere data, f.eks. hvordan Windows, Windows Server, Systemcenter og apps bruges, hvordan de fungerer, samt avancerede pålidelighedsdata.
+
+Ved værdien 3 (Fuld) sendes de samme data som ved værdien 2 samt avancerede diagnosticeringsdata, der bruges til at diagnosticere og løse problemer med enheder. Disse data kan omfatte de filer og det indhold, der kan være årsag til et problem med enheden.
+
+Indstillingerne for Windows 10-diagnosticeringsdata gælder for Windows-operativsystemet og apps, der er inkluderet i Windows. Indstillingen gælder ikke for tredjepartsapps på Windows 10.
+
+Hvis du deaktiverer eller undlader at konfigurere denne politikindstilling, kan brugere konfigurere telemetriniveauet under Indstillinger.
+
+</string>
+      <string id="EnableExperimentation">Deaktiver foreløbige funktioner eller indstillinger</string>
+      <string id="EnableExperimentation_1">Kun enhedsindstillinger</string>
+      <string id="EnableExperimentation_2">Fulde eksperimenter</string>
+      <string id="EnableExperimentation_Explain">Denne politikindstilling bestemmer, hvilket niveau Microsoft kan eksperimentere med produktet på for at undersøge brugerens indstillinger eller enhedens virkemåde. En værdi på 1 betyder, at Microsoft kun kan konfigurere enhedsindstillinger. En værdi på 2 betyder, at Microsoft kan udføre fulde eksperimenter.
+
+Hvis du deaktiverer denne politikindstilling, slås alle eksperimenter fra.
+
+Hvis du undlader at konfigurere denne indstilling, kan brugeren konfigurere indstillingen "Lad Microsoft prøve funktioner på dette build" under Indstillinger.
+</string>
+      <string id="TelemetryProxy">Konfigurer brugeroplevelser for tilsluttede brugere samt telemetri</string>
+      <string id="TelemetryProxy_Explain">Med denne politikindstilling kan du videresende anmodninger om Tilsluttet brugeroplevelse og telemetri til en proxyserver.
+
+Hvis du aktiverer politikindstillingen, kan du angive FQDN eller IP-adressen på destinationsenheden i din organisations netværk (og eventuelt et portnummer, hvis der er brug for det). Tilslutningen sker via en SSL-forbindelse (Secure Sockets Layer). Hvis den navngivne proxyanmodning ikke lykkes, eller hvis du deaktiverer eller undlader at konfigurere politikindstillingen, bliver data om Tilsluttet brugeroplevelse og telemetri sendt til Microsoft ved brug af standardproxykonfigurationen.
+
+Formatet af denne indstilling er &lt;server&gt;:&lt;port&gt; 
+</string>
+      
+      <string id="CommercialId">Konfigurer det kommercielle id</string>
+      <string id="CommercialId_Explain">Denne politikindstilling definerer det id, der bruges til entydigt at tilknytte denne enheds telemetridata som tilhørende en given organisation. Hvis din organisation deltager i et program, der kræver, at denne enhed skal identificeres som tilhørende din organisation, kan du bruge denne indstilling til at levere dette id. Værdien til denne indstilling leveres af Microsoft som en del af programmets onboardingproces. 
+
+Hvis du deaktiverer eller undlader at konfigurere denne politikindstilling, vil Microsoft ikke kunne bruge dette id til at knytte denne computer og dens telemetridata til din organisation.
+</string>
+
+      <string id="DisableEnterpriseAuthProxy">Konfigurer brugen af godkendt proxy for tjenesten Tilsluttet brugeroplevelse og telemetri</string>
+      <string id="DisableEnterpriseAuthProxy_1">Aktivér brug af godkendt proxy</string>
+      <string id="DisableEnterpriseAuthProxy_2">Deaktiver brug af godkendt proxy</string>
+      <string id="DisableEnterpriseAuthProxy_Explain">Denne politikindstilling forhindrer tjenesten Tilsluttet brugeroplevelse og telemetri i automatisk at bruge en godkendt proxy til at sende data tilbage til Microsoft på Windows 10. Hvis du deaktiverer eller undlader at konfigurere denne politikindstilling, bruger tjenesten Tilsluttet brugeroplevelse og telemetri automatisk en godkendt proxy til at sende data tilbage til Microsoft. Hvis du aktiverer denne politik, forhindres tjenesten Tilsluttet brugeroplevelse og telemetri i automatisk at bruge en godkendt proxy.</string>
+
+      <string id="LimitEnhancedDiagnosticDataWindowsAnalytics">Begræns udvidede diagnosticeringsdata til det minimum, der kræves af Windows Analytics</string>
+      <string id="LimitEnhancedDiagnosticDataWindowsAnalytics_1">Aktivér Windows Analytics-samling</string>
+      <string id="LimitEnhancedDiagnosticDataWindowsAnalytics_2">Deaktiver Windows Analytics-samling</string>
+      <string id="LimitEnhancedDiagnosticDataWindowsAnalytics_Explain">Denne politikindstilling vil kombineret med politikindstillingen Tillad telemetri give organisationer lov til at sende et bestemt sæt af diagnosticeringsdata til Microsoft til it-indsigt via Windows Analytics-tjenester.
+
+Du kan aktivere denne funktionalitet ved at fuldføre to trin:
+
+    1. Aktivér denne politikindstilling
+    2. Indstil Tillad telemetri til niveau 2 (Udvidet)
+
+Når du konfigurerer disse politikindstillinger, sendes der et grundlæggende niveau af diagnosticeringsdata plus yderligere hændelser, der kræves til Windows Analytics, til Microsoft. Disse hændelser er dokumenteret her: https://go.microsoft.com/fwlink/?linkid=847594.
+
+Hvis du aktiverer udvidede diagnosticeringsdata i politikken Tillad telemetri og ikke konfigurerer denne politik, sendes de påkrævede hændelser til Windows Analytics, plus yderligere telemetridata på udvidet niveau. Denne indstilling har ingen effekt på de computere, der er konfigureret til at sende diagnosticeringsdata på niveauerne Fuld, Grundlæggende eller Sikkerhed til Microsoft.
+
+Hvis du deaktiverer eller ikke konfigurerer denne politikindstilling, vil det niveau af diagnosticeringsdata, der sendes til Microsoft, være bestemt af politikken Tillad telemetri.
+      </string>
+
+    </stringTable>
+    <presentationTable>
+      <presentation id="AllowTelemetry">
+        <dropdownList refId="AllowTelemetry" noSort="true" defaultItem="1"></dropdownList>
+      </presentation>
+      <presentation id="EnableExperimentation">
+        <dropdownList refId="EnableExperimentation" noSort="true" defaultItem="1"></dropdownList>
+      </presentation>
+      <presentation id="TelemetryProxy">
+        <textBox refId="TelemetryProxyName">
+        <label>Navn på proxyserver:</label>
+        </textBox>
+      </presentation>
+      <presentation id="CommercialID">
+        <textBox refId="CommercialIdValue">
+        <label>Kommercielt id:</label>
+        </textBox>
+      </presentation>
+      <presentation id="DisableEnterpriseAuthProxy">
+        <dropdownList refId="DisableEnterpriseAuthProxy" noSort="true" defaultItem="1"></dropdownList>
+      </presentation>
+      <presentation id="LimitEnhancedDiagnosticDataWindowsAnalytics">
+        <dropdownList refId="LimitEnhancedDiagnosticDataWindowsAnalytics" noSort="true" defaultItem="0"></dropdownList>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>
