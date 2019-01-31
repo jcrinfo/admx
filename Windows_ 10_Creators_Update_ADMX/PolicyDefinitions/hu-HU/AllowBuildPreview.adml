@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>itt adja meg a megjelenítendő nevet</displayName>
+  <description>itt adja meg a leírást</description>
+  <resources>
+    <stringTable>
+      <string id="AllowBuildPreview">Felhasználói döntés az Insider buildekről</string>
+      <string id="AllowBuildPreview_Explain">Ezzel a házirenddel szabályozhatja, hogy a felhasználók hozzáférnek-e a Windows Update speciális beállításai között az Insider buildekkel kapcsolatos vezérlőkhöz, amelyek az Insider buildek beszerzése szakaszban találhatók, és lehetővé teszik az előzetes Windows-szoftverek letöltését és telepítését az eszközre.
+
+Ha engedélyezi vagy nem konfigurálja ezt a házirend-beállítást, a felhasználók letölthetnek és telepíthetnek előzetes Windows-szoftvereket az eszközre.
+
+Ha letiltja ezt a házirend-beállítást, az Insider buildek beszerzése elem nem lesz elérhető.
+
+Megjegyzés: Ez a házirend-beállítás csak a Windows 10 Pro, Enterprise, Education vagy Server kiadásait futtató eszközökre vonatkozik.
+</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Zde zadejte zobrazovaný název.</displayName>
+  <description>Zde zadejte popis.</description>
+  <resources>
+    <stringTable>
+      <string id="AllowBuildPreview">Změnit možnosti uživatelů pro buildy Insider</string>
+      <string id="AllowBuildPreview_Explain">Toto nastavení zásad určuje, jestli uživatelé budou mít přístup k ovládacím prvkům pro buildy Insider v upřesňujících možnostech pro Windows Update. Tyto ovládací prvky se nacházejí v části Získat buildy Insider a umožňují uživatelům, aby u svých zařízení povolili stahování a instalaci softwaru Windows ve verzi Preview.
+
+Pokud nastavení této zásady povolíte nebo nenakonfigurujete, uživatelé si budou moct stáhnout a nainstalovat software Windows ve verzi Preview na svá zařízení.
+
+Pokud nastavení této zásady zakážete, položka Získat buildy Insider bude nedostupná.
+
+Poznámka: Toto nastavení zásad se týká jenom zařízení s Windows 10 v edici Pro, Enterprise, Education nebo Server.
+</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>
