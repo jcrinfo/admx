@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>entrer le nom complet ici</displayName>
+  <description>entrer la description ici</description>
+  <resources>
+    <stringTable>
+      <string id="AllowBuildPreview">Basculer le contrôle utilisateur sur les builds Insider</string>
+      <string id="AllowBuildPreview_Explain">Ce paramètre de stratégie détermine si les utilisateurs peuvent accéder aux contrôles des builds Insider dans Options avancées de Windows Update. Ces contrôles se situent sous Obtenir des builds Insider. Ils permettent aux utilisateurs de rendre leur appareil disponible pour le téléchargement et l’installation des logiciels d’évaluation Windows.
+
+Si vous activez ou ne configurez pas ce paramètre de stratégie, les utilisateurs peuvent télécharger et installer les logiciels d’évaluation Windows sur leur appareil.
+
+Si vous désactivez ce paramètre de stratégie, l’option Obtenir des builds Insider est indisponible.
+
+Remarque : ce paramètre de stratégie s’applique uniquement aux appareils exécutant Windows 10 Professionnel, Entreprise, Éducation ou Server.
+</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Protección de aplicaciones de Windows Defender</displayName>
+  <description>Activar la protección de aplicaciones de Windows Defender en el modo de empresa</description>
+  <resources>
+    <stringTable>
+        <string id="AppHVSICat_DisplayName">Protección de aplicaciones de Windows Defender</string>
+        <string id="AppHVSI_AllowAppHVSI_DisplayName">Activar la protección de aplicaciones de Windows Defender en el modo de empresa</string>
+        <string id="AppHVSI_AllowAppHVSI_Explain">Esta directiva habilita el aislamiento de aplicaciones con la Protección de aplicaciones de Windows Defender (Protección de aplicaciones).
+
+La Protección de aplicaciones usa el hipervisor de Windows para crear un entorno virtualizado para que las aplicaciones configuradas usen el aislamiento de seguridad basado en la virtualización. Durante el aislamiento, las interacciones inadecuadas del usuario y las vulnerabilidades de las aplicaciones no pueden comprometer el kernel ni ninguna otra aplicación que se ejecute fuera del entorno virtualizado.
+
+Si habilitas esta configuración, la Protección de aplicaciones se activa para la organización.
+        </string>
+        <string id="AppHVSI_ClipboardSettings_DisplayName">Establecer la configuración de portapapeles de Protección de aplicaciones de Windows Defender</string>
+        <string id="AppHVSI_ClipboardSettings_Explain">Esta configuración de directiva permite decidir cómo se comporta el Portapapeles mientras se está en la Protección de aplicaciones de Windows Defender (Protección de aplicaciones).
+
+Si habilitas esta configuración, debes elegir entre los comportamientos siguientes:
+
+     - Deshabilitar la funcionalidad del Portapapeles completamente entre el host y la Protección de aplicaciones
+
+     - Habilitar el Portapapeles para copiar el contenido de la Protección de aplicaciones en el host
+
+     - Habilitar el Portapapeles para copiar el contenido del host en la Protección de aplicaciones
+
+NOTA
+Recomendamos no habilitar la copia del host en la Protección de aplicaciones. Si habilitas esta funcionalidad, una sesión de Protección de aplicaciones potencialmente comprometida tendrá acceso al Portapapeles del dispositivo host y a su contenido.
+
+Si decides habilitar la copia, debes elegir también el tipo de contenido que se puede copiar, usando las opciones de contenido:
+
+     - 1. Permite la copia de texto.
+
+     - 2. Permite la copia de imágenes.
+
+     - 3. Permite la copia de texto e imágenes.
+
+Si deshabilitas o no estableces esta configuración, se desactiva toda la funcionalidad del Portapapeles en la Protección de aplicaciones.
+        </string>
+        <string id="AppHVSI_ClipboardSettings_DropdownList_Option_OperationDisabled">Bloquear las operaciones del Portapapeles (valor predeterminado)</string>
+        <string id="AppHVSI_ClipboardSettings_DropdownList_Option_ContainerToHostEnabled">Habilitar las operaciones del Portapapeles desde una sesión aislada hasta el host</string>
+        <string id="AppHVSI_ClipboardSettings_DropdownList_Option_HostToContainerEnabled">Habilitar las operaciones del Portapapeles desde un host hasta la sesión aislada</string>
+        <string id="AppHVSI_ClipboardSettings_DropdownList_Option_BothDirectionsEnabled">Habilitar operaciones de Portapapeles en ambas direcciones</string>
+        <string id="AppHVSI_PrintingSettings_DisplayName">Establecer la configuración de impresión de la Protección de aplicaciones de Windows Defender</string>
+        <string id="AppHVSI_PrintingSettings_Explain">Esta configuración de directiva permite decidir cómo se comporta la funcionalidad de impresión mientras se está en la Protección de aplicaciones de Windows Defender (Protección de aplicaciones).
+
+Si habilitas esta configuración, tienes que elegir uno o varios de los siguientes comportamientos:
+
+     - Deshabilitar toda la funcionalidad de impresión en la Protección de aplicaciones.
+
+     - Habilitar la impresión en impresoras de red existentes.
+
+     - Habilitar la impresión en impresoras locales.
+
+     - Habilitar la impresión en PDF, permite imprimir como PDF y guardar el archivo resultante en el host.
+
+     - Habilitar la impresión en XPS, permite imprimir como XPS y guardar el archivo resultante en el host.
+
+Si deshabilitas o no estableces esta configuración, se desactiva toda la funcionalidad de impresión en la Protección de aplicaciones.
+        </string>
+        <string id="AppHVSI_BlockNonEnterpriseContent_DisplayName">Impedir que los sitios Web de empresa cargue contenido ajenos a la empresa en Microsoft Edge e Internet Explorer</string>
+        <string id="AppHVSI_BlockNonEnterpriseContent_Explain">Esta configuración de directiva permite decidir si los sitios web pueden cargar contenido no empresarial en Microsoft Edge e Internet Explorer.
+
+Si habilitas esta configuración, se impide que el contenido no empresarial insertado en sitios empresariales se abra en Internet Explorer o Microsoft Edge fuera de la Protección de aplicaciones de Windows Defender.
+
+Si deshabilitas o no estableces esta configuración, los sitios no empresariales se pueden abrir fuera del contenedor de la Protección de aplicaciones de Windows Defender, directamente en Internet Explorer y Microsoft Edge.
+        </string>
+        <string id="AppHVSI_AllowPersistence_DisplayName">Permitir la persistencia de los datos de aplicaciones de Windows Defender</string>
+        <string id="AppHVSI_AllowPersistence_Explain">Esta configuración de directiva permite decidir si los datos deben persistir entre las diferentes sesiones en la Protección de aplicaciones de Windows Defender (Protección de aplicaciones).
+
+        Si habilitas esta configuración, la Protección de aplicaciones guarda los archivos descargados por el usuario y otros elementos (como cookies, Favoritos, etc.) para usarlos en futuras sesiones de la Protección de aplicaciones.
+
+             NOTA
+             Si habilitas esta configuración, aún puedes eliminar los datos de usuario de un dispositivo específico con el comando Reset-ApplicationGuard PowerShell. Cuando se ejecuta este comando se eliminan todos los datos de los empleados, independientemente de la configuración, y los empleados pueden perder datos.
+
+        Si deshabilitas o no estableces esta configuración, la Protección de aplicaciones elimina todos los datos de usuario dentro del contenedor de la Protección de aplicaciones.
+        </string>
+        <string id="AppHVSI_AllowVirtualGPU_DisplayName">Permitir representación acelerada mediante hardware para Protección de aplicaciones de Windows Defender</string>
+        <string id="AppHVSI_AllowVirtualGPU_Explain">Esta configuración de directiva determina si Protección de aplicaciones de Windows Defender representa los gráficos con aceleración de hardware o software.
+
+Si habilitas esta configuración, Protección de aplicaciones de Windows Defender usará Hyper-V para obtener acceso a hardware de representación de gráficos compatible y de alta seguridad (GPU). Las GPU mejorar el rendimiento de la presentación y la duración de batería al usar Protección de aplicaciones de Windows Defender, especialmente para la reproducción de vídeo y otros usos intensivos de gráficos. Si habilitas esta configuración sin conectarte a ningún hardware de representación de gráficos de alta seguridad, Protección de aplicaciones de Windows Defender volverá automáticamente a la representación basada en software (CPU).
+
+Nota:
+Ten en cuenta que si habilitas esta configuración con controladores o dispositivos de gráficos potencialmente comprometidos podría suponer un riesgo para el dispositivo de host.
+
+Si deshabilitas o no defines esta configuración, Protección de aplicaciones de Windows Defender usa representación basada en software (CPU) y no cargará ningún controlador de gráficos de terceros ni interactuará con ningún hardware de gráficos conectado.
+        </string>
+        <string id="AppHVSI_AuditApplicationGuard_DisplayName">Permitir la auditoría de eventos en aplicaciones de Windows Defender</string>
+        <string id="AppHVSI_AuditApplicationGuard_Explain">Esta configuración de directiva permite decidir si se pueden recopilar eventos de auditoría de la Protección de aplicaciones de Windows Defender (Protección de aplicaciones).
+
+        Si habilitas esta configuración, la Protección de aplicaciones hereda sus directivas de auditoría de Microsoft Edge y empieza a auditar los eventos del sistema específicamente para la Protección de aplicaciones.
+
+             NOTA
+             Los registros recopilados se pueden revisar en Microsoft Edge, fuera de la Protección de aplicaciones.
+
+        Si deshabilitas o no estableces esta configuración, no se recopilan registros de eventos de auditoría para la Protección de aplicaciones.</string>
+
+        <string id="AppHVSI_SaveFilesToHost_DisplayName">Permitir que los archivos se descarguen y guarden en el sistema operativo host de Protección de aplicaciones de Windows Defender</string>
+        <string id="AppHVSI_SaveFilesToHost_Explain">Esta configuración de directiva determina si guardar los archivos descargados en el sistema operativo host desde el contenedor de Protección de aplicaciones de Windows Defender.
+
+Si habilitas esta configuración, la gente podrá guardar los archivos descargados desde el contenedor de Protección de aplicaciones de Windows Defender en el sistema operativo host.
+
+Si la deshabilitas o no la configuras, la gente no podrá guardar los archivos descargados desde el contenedor de Protección de aplicaciones de Windows Defender en el sistema operativo host.
+        </string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="AppHVSIClipboardSettings_Presentation">
+        <dropdownList refId="AppHVSIClipboardSettings_CopyPasteDirection_DropdownList" noSort="true" defaultItem="0">Configuración de comportamiento del Portapapeles.</dropdownList>
+        <decimalTextBox refId="AppHVSIClipboardFileType_AllowedFileType_TextBox" defaultValue="1">Opciones de contenido del Portapapeles.
+        </decimalTextBox>
+      </presentation>
+      <presentation id="AppHVSIPrintingSettings_Presentation">
+        <decimalTextBox refId="AppHVSIPrintingSettings_TextBox" defaultValue="0">Tipos de impresión permitidos en la Protección de aplicaciones.
+        </decimalTextBox>
+        <text>Para determinar qué tipos de impresión vas a permitir, tienes que elegir:
+     - 0. Deshabilita toda la funcionalidad de impresión.
+     - 1. Habilita solo la impresión XPS.
+     - 2. Habilita solo la impresión PDF.
+     - 3. Habilita la impresión PDF y XPS.
+     - 4. Habilita solo la impresión local.
+     - 5. Habilita la impresión local y XPS.
+     - 6. Habilita la impresión local y PDF.
+     - 7. Habilita la impresión local, PDF y XPS.
+     - 8. Habilita solo la impresión de red.
+     - 9. Habilita la impresión de red y XPS.
+     - 10. Habilita la impresión de red y PDF.
+     - 11. Habilita la impresión de red, PDF y XPS.
+     - 12. Habilita la impresión de red y local.
+     - 13. Habilita la impresión de red, local y XPS.
+     - 14. Habilita la impresión de red, local y PDF.
+     - 15. Habilita toda la impresión.
+        </text>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>
